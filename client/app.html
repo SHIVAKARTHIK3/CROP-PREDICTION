@@ -1,0 +1,49 @@
+<html>
+<head>
+<h1 align="center"> Crop Prediction </h1>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="app.js"></script>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+ <form class="form" >
+    <div>
+         <h2> State </h2>
+    </div>     
+<select  class="State" name="" id="uiState">
+    <option  value="" disabled="disabled" selected="selected">Choose your State </option>
+    <option>Andaman and Nicobar Islands</option>
+    <option>Andhara Pradesh</option>    
+</select> <br>
+<form class="form">
+    <h2 > Rainfall </h2>
+    <input class="Rainfall" type="email" id="uiRainfall" class="floatlabel" name="Rainfall" value="1234">
+  
+    <div>
+         <h2> Season </h2>
+    </div>
+   <select class="Season" name="" id="uiSeason">
+    <option value="" disabled="disabled" selected="selected">Choose a Season </option> 
+    <option>Rabi</option>
+    <option>Kharif</option>
+    <option>Whole Year</option>
+    <option>Summer</option>
+    <option>Autumn</option>
+    </select> 
+   <div>
+        <h2 style="color:rgb(205, 235, 6);">Soil</h2>
+    </div>
+<select class="Soil" name="" id="uiSoil">
+    <option value="" disabled="disabled" selected="selected">Choose your Soil type</option>
+    <option>RedClay</option>
+    <option>Black</option>    
+</select> 
+ 
+    <button class="submit" onclick="onClickedPredictCrop()"  type="button"><b> Predict Crop</b> </button>
+    <div id="uiPredictcrop" class="result"><h2></h2></div>
+
+
+    
+</body>
+</html>
